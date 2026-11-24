@@ -1,0 +1,12 @@
+config BR2_PACKAGE_RUTABAGA_GFX_FFI
+	bool "rutabaga_gfx_ffi"
+	depends on BR2_PACKAGE_HOST_RUSTC_TARGET_ARCH_SUPPORTS
+	select BR2_PACKAGE_HOST_RUSTC
+	select BR2_PACKAGE_GFXSTREAM
+	select BR2_PACKAGE_LIBDRM
+	help
+	  C FFI bindings for rutabaga_gfx (virtio-gpu / gfxstream
+	  virtualization library from crosvm).
+
+	  https://googlesource.com
+
